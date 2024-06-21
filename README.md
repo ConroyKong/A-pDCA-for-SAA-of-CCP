@@ -19,7 +19,6 @@ This code can be run in Matlab R2022b and Gurobi 9.5.2.
 * `ALDM.m`, `ALDM_update_x.m`, `ALDM_update_y.m`: the implementation of the augmented Lagrangian decomposition method (ALDM) in paper "An augmented Lagrangian decomposition method for chance-constrained optimization problems".
 * `post_processing.m`: the code for calculating the maximum, minimum and mean values of the indicators.
 * `risk_level.m`: the code for calculating the risk level of each method.
-* 
 
 ### How to get the results
 * To run the experiments of "VaR-Constrained Portfolio Selection Problem", please `main_portfolio.m`.
