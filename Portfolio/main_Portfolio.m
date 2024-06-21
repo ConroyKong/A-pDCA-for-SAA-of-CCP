@@ -7,7 +7,7 @@ clear; clc;
 addpath(genpath(pwd));
 
 fprintf('***************** Tests on Portfolio Selection Problem *****************\n');
-a = 10;
+a = 10; % risk level(%)
 %% choose the method
 IP = 1; CVa = 1; Bi = 1; DC = 1; pDC = 1; pDC1 = 1; pDC2 = 1; AL = 1; SC = 1; repeat_num = 5;
 
@@ -43,7 +43,7 @@ for n = [100, 200, 300, 400]
         beta = 2;       % risk aversion factor
         u = 0.5*ones(n,1);  % upper bound vector for x
         R = 0.0002;       %  return level 0.0002
-        alpha = 0.1;        % risk level
+        alpha = a/100;        % risk level
 
         %% sample based method
         train_samples = data((n+1):(n+N),1:n);
